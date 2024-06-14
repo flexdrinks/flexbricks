@@ -1,0 +1,73 @@
+* {
+  font-family: sans-serif;
+  color: peachpuff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: palevioletred;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  font-size: 2.618rem;
+  font-weight: 500;
+}
+
+.sub {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: 0.1rem solid peachpuff;
+  font-size: 1.618rem;
+  padding: 1rem;
+  margin: 1rem;
+  outline: none;
+}
+
+button:hover {
+  background-color: peachpuff;
+  color: palevioletred;
+}
+
+button:active {
+  background-color: papayawhip;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Old School United', sans-serif;
+}
+
+.content ul {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.content p {
+  font-size: 1rem;
+  margin: 1rem;
+}
+.blog-a {
+  font-size: 3rem !important;
+}
+
+.diagonal-text { 
+  overflow: hidden;
+  transform: rotate(45deg); 
+  transform-origin: 0 0; 
+  position: absolute; 
+  top: 30%;
+  left: 40%;
+  color: rgba(0,0,0,0.1);
+  font-size: 2em;
+} 
