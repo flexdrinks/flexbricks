@@ -3,7 +3,7 @@
 const auth = new OAuth2PopupFlow.OAuth2PopupFlow({
 authorizationUri: 'https://oauth-zl4v.onrender.com/auth',
   clientId: 'fbclient',
-  redirectUri: 'http://localhost:8000/redirect.html',
+  redirectUri: 'https://flexdrinks.github.io/flexbricks/redirect.html',
   scope: 'openid profile',
   responseType: 'id_token',
   accessTokenResponseKey: 'id_token',
