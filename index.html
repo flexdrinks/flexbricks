@@ -2,54 +2,66 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Всем чмоки в этом чате</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.cdnfonts.com/css/old-school-united" rel="stylesheet">
-</head>
-<body>
-  <script src="node_modules/oauth2-popup-flow/dist/oauth2-popup-flow.js"></script>
-  <script src="index.js"></script>
-  <div class="content" id="content">
-    <h2>ВСЯКАЯ ФИГНЯ:</h2>
-    <ul>
-      <li><a href="usefulinfo.jpg" >Полезная информация</a></li>
-      <li><a href="#" onclick="return confirm('Хахахахахахааааааа! лол... ты серьёзно? Никто с тобой не хочет разговаривать.')" >Связь с разрабочиками</a></li>
-    </ul>
-    <button id="logout">Выйтить</button>
-    <p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Всем чмоки в этом чате</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/old-school-united"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="node_modules/oauth2-popup-flow/dist/oauth2-popup-flow.js"></script>
+    <script src="index.js"></script>
+    <div class="content" id="content">
+      <h2>ВСЯКАЯ ФИГНЯ:</h2>
+      <ul>
+        <li><a href="usefulinfo.jpg">Полезная информация</a></li>
+        <li>
+          <a
+            href="#"
+            onclick="return confirm('Хахахахахахааааааа! лол... ты серьёзно? Никто с тобой не хочет разговаривать.')"
+            >Связь с разрабочиками</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/drive/u/3/folders/1-Xc7JceGaeb8UeB7lz8egvC8DtozmvVX"
+            >Создать новую запись</a
+          >
+        </li>
+      </ul>
+      <button id="logout">Выйтить</button>
       <h4>Журнал мурзилка</h4>
-
       <ul id="blog-posts">
         <!--li><a class="blog-a" href="">2024.06.12 Как мы на отдых ходили.</a></li-->
       </ul>
-
-    </p>
-  <div>
-     <p>Если нужен код для вставки фоток в MD файлик:
-      <input style="color:green;width:600px;" id="link" type="text" value="Ссылка на гугол фоты пошаренный альбум(https://photos.app.goo.gl/xxxxxxxx)"/><button onclick="openAlbumInNewTabWithHeaders()">сгенерить</button> 
-</p>
-<a href="https://drive.google.com/drive/u/3/folders/1-Xc7JceGaeb8UeB7lz8egvC8DtozmvVX">
-  Создать новую запись
-</a>
-  </div>
-  </div>
-  <div class="diagonal-text">&nbsp;&nbsp;&nbsp;МЕРЗКИЙ ФОН ПРЯМ ЗДЕСЬ</div> 
-</body>
+      <div>
+        <p>
+          Если нужен код для вставки фоток в MD файлик:
+          <input
+            style="color: green; width: 600px"
+            id="link"
+            type="text"
+            value="Ссылка на гугол фоты пошаренный альбум(https://photos.app.goo.gl/xxxxxxxx)"
+          /><button onclick="openAlbumInNewTabWithHeaders()">сгенерить</button>
+        </p>
+      </div>
+    </div>
+    <div class="diagonal-text">&nbsp;&nbsp;&nbsp;МЕРЗКИЙ ФОН ПРЯМ ЗДЕСЬ</div>
+    <script src="snowfall.js"></script>
+    <script>
+      //onload
+      var defaultOptions = {
+        minSpeed: 1,
+        maxSpeed: 3,
+        count: 50,
+        minRadius: 9,
+        maxRadius: 19,
+        text: "🍺",
+      };
+      var snow = new Snowfall(defaultOptions);
+    </script>
+  </body>
 </html>
-<script src="snowfall.js"></script>
-<script>
-  //onload 
-  var defaultOptions = {
-    minSpeed : 1,
-    maxSpeed : 3,
-    count : 50,
-    minRadius : 9,
-    maxRadius : 19,
-    text: "🍺"
-};
-  var snow = new Snowfall(defaultOptions);
-
-</script>
-  
