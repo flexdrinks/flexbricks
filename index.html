@@ -11,7 +11,6 @@
 <body>
   <script src="node_modules/oauth2-popup-flow/dist/oauth2-popup-flow.js"></script>
   <script src="index.js"></script>
-  <div class="diagonal-text">&nbsp;&nbsp;&nbsp;МЕРЗКИЙ ФОН ПРЯМ ЗДЕСЬ</div> 
   <div class="content" id="content">
     <h2>ВСЯКАЯ ФИГНЯ:</h2>
     <ul>
@@ -22,13 +21,31 @@
     <p>
       <h4>Журнал мурзилка</h4>
 
-      <ul>
-        <li><a class="blog-a" href="">2024.06.12 Как мы на отдых ходили.</a></li>
-        <li><a class="blog-a" href="">2023.01.01 Как мы набухались.</a></li>
+      <ul id="blog-posts">
+        <!--li><a class="blog-a" href="">2024.06.12 Как мы на отдых ходили.</a></li-->
       </ul>
 
     </p>
+  <div>
+     <p>Если нужен код для вставки фоток в MD файлик:
+      <input style="color:green;width:600px;" id="link" type="text" value="Ссылка на гугол фоты пошаренный альбум(https://photos.app.goo.gl/xxxxxxxx)"/><button onclick="openAlbumInNewTabWithHeaders()">сгенерить</button> 
+</p>
   </div>
+  </div>
+  <div class="diagonal-text">&nbsp;&nbsp;&nbsp;МЕРЗКИЙ ФОН ПРЯМ ЗДЕСЬ</div> 
 </body>
 </html>
+<script src="snowfall.js"></script>
+<script>
+  //onload 
+  var defaultOptions = {
+    minSpeed : 1,
+    maxSpeed : 5,
+    count : 100,
+    minRadius : 9,
+    maxRadius : 19,
+};
+  var snow = new Snowfall(defaultOptions);
+
+</script>
   

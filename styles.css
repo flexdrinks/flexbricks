@@ -62,6 +62,7 @@ h1, h2, h3 {
 }
 
 .diagonal-text { 
+  z-index: -1;
   overflow: hidden;
   transform: rotate(45deg); 
   transform-origin: 0 0; 
